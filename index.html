@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work-Life Balance Guardian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🛡 Work-Life Balance Guardian</h1>
+
+    <div class="container">
+        <h2 id="timer">00:00:00</h2>
+
+        <button onclick="toggleDarkMode()" id="darkModeBtn">🌙 Dark Mode</button>
+        <button onclick="startWork()">Start Work</button>
+        <button onclick="endWork()">End Work</button>
+
+        <p id="todayHours">Today's Work Time: 0 hours</p>
+        <h2>🎯 Daily Goal</h2>
+        <input type="number" id="goalInput" placeholder="Enter Goal Hours">
+
+        <button onclick="saveGoal()">Save Goal</button>
+
+<p id="goalText">Goal: 8 Hours</p>
+
+<p id="goalProgress">Progress: 0 / 8 Hours</p>
+<p id="weeklyHours">Weekly Work Time: 0 hours</p>
+<p id="monthlyHours">Monthly Work Time: 0 hours</p>
+<h2>📈 Productivity Level</h2>
+<p id="productivity">🌱 Beginner</p>
+<p id="overtime">Overtime: 0 hours</p>
+<h2 id="guardianScore">Guardian Score: 100</h2>
+<p id="badge"></p>
+<h2>🤖 Wellness Tips</h2>
+<p id="wellnessTip">Keep a healthy work-life balance!</p>
+<h2>🏆 Achievements</h2>
+
+<p id="achievement">No Achievement Yet</p>
+<h2>🔥 Streak</h2>
+<p id="streak">Current Streak: 0 Days</p>
+<h2>📜 Work History</h2>
+<button onclick="clearHistory()">
+    🗑 Clear History
+</button>
+<div id="history"></div>
+<h2>📊 Weekly Productivity Chart</h2>
+<canvas id="weeklyChart" width="400" height="200"></canvas>
+<button onclick="downloadReport()">
+    📄 Download Report
+</button>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
